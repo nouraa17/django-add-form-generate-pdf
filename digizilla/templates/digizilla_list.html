@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digizilla View</title>
+</head>
+<body>
+    <h1>Digizilla View</h1>
+    <div>
+        {% for digizilla in digizillas %}
+        <div>
+            <h2>{{ digizilla.name }}</h2>
+            <p>Gender: {{ digizilla.gender }}</p>
+            <p>Country: {{ digizilla.country }}</p>
+            <p>Company: {{ digizilla.company }}</p>
+            <p>Joining date: {{ digizilla.joining_date }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
